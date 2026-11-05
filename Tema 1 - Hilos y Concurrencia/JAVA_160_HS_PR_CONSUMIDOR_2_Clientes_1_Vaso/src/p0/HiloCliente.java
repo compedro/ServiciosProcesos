@@ -20,7 +20,7 @@ public class HiloCliente extends Thread {
             while (vaso.consultarVasosCliente(nombre) < 3) {
                 if (!vaso.estaLLeno()) { // cuando el vaso está VACIO:
                     System.out.println("\nEL CLIENTE " + nombre + " DICE QUE EL VASO ESTA VACIO");
-                    vaso.notify(); // notificar al Scheduler que levante al hilo camarero.
+                    vaso.notifyAll(); // notificar al Scheduler que levante al hilo camarero.
                     try {
                         vaso.wait(); // el hilo cliente se pone en espera.
 //                        // Añado el if...continue como Verificación: si desperta pero el vaso ya está vacío, volver a esperar
@@ -37,10 +37,11 @@ public class HiloCliente extends Thread {
                     vaso.incrementarVeces();
                     vaso.incrementarVasosCliente(nombre); // ES EL CLIENTE EL QUE INCREMENTA LAS VECES.
 //                    vaso.retardar();
+                    vaso.notify();
                 }
             }
 
-            System.out.println("\n>>>>>>>> EL CLIENTE ESTA TROMPA, PAGA Y SE VA A CASA."
+            System.out.println("\n>>>>>>>> EL CLIENTE"+ nombre +" ESTA TROMPA, PAGA Y SE VA A CASA."
                     + " FIN DEL HILO CLIENTE.");
 
             // NO OLVIDAR ESTE NOTIFY O EL CAMARERO NO TERMINARÁ.

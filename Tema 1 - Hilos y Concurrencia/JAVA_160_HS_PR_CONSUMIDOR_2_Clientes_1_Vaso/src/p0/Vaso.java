@@ -7,7 +7,7 @@ import java.util.Map;
 public class Vaso {
     private boolean         lleno;          // false.
     private int             veces;          // 0. 
-    private final long      retardo = 3000; // en milisegundos.
+    private final long      retardo = 1000; // en milisegundos.
     private Map<String, Integer> vasosPorCliente; //Mapa para registrar los vasos de cada cliente
     public Vaso() {
         veces = 0;

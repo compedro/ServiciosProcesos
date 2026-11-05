@@ -36,7 +36,7 @@ public class HiloCamarero extends Thread {
                     // si el vaso está vacio:
                     System.out.println("Consulta de veces antes de llenar: " + vaso.consultarVeces());
                     System.out.println(" >>>> EL CAMARERO LLENA EL VASO ... PARA ALIVIAR LAS PENAS!!!");
-//                    vaso.retardar(); // provocar un retardo sleep (no suelta la llave mientras llena).
+                    vaso.retardar(); // provocar un retardo sleep (no suelta la llave mientras llena).
                     vaso.llenarVaso(); // cambiar el estado de la propiedad lleno de vaso.
                     // Sera el hilo cliente el que al vaciar el vaso incrementará el
                     // número de veces (podríamos haber elegido al camarero para hacerlo).
