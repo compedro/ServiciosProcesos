@@ -16,8 +16,8 @@ public class NumerosThread extends Thread {
         for (int i = 0; i < 100; i++) {
             System.out.println("---> " + i);            
             
-            // sleep, wait y join pueden lanzar la interrupción 
-            // comprobativa: InterruptedException.
+//             sleep, wait y join pueden lanzar la interrupción 
+//             comprobativa: InterruptedException.
             try {
                 Thread.sleep(100); // ponte a dormir al menos 100 ms.
             } catch(InterruptedException ie) {

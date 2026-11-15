@@ -14,7 +14,7 @@ public class OtroHilo extends Thread {
         super(nombre);
         setName(nombre.toLowerCase());
         setPriority(NORM_PRIORITY);        
-        //setPriority(MIN_PRIORITY);        
+//        setPriority(MIN_PRIORITY);        
     }    
     
     @Override

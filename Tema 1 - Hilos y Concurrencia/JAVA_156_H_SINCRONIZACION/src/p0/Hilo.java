@@ -17,8 +17,8 @@ public class Hilo extends Thread {
         // EL MISMO RECURSO PARA TODOS LOS HILOS.
         this.recurso = recurso;
         
-        // UN RECURSO DISTINTO PARA CADA HILO.
-        //this.recurso = new Recurso(); 
+//         UN RECURSO DISTINTO PARA CADA HILO.
+//        this.recurso = new Recurso();
     }
         
     @Override
@@ -26,8 +26,8 @@ public class Hilo extends Thread {
         
         // Elegir uno de los 2 métodos y comprobar si hay o no esperas.
         
-        //recurso.metodo1();      // sinchronized.
-        recurso.metodo2();    // -nada-        
+        recurso.metodo1();      // sinchronized.
+//        recurso.metodo2();    // -nada-
     }    
 
 }

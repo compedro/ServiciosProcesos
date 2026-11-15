@@ -2,9 +2,9 @@ package testexamen;
 
 import static java.lang.Thread.sleep;
 
-class Hilo extends Thread {
+class HiloThread extends Thread {
 
-    public Hilo(String str) {
+    public HiloThread(String str) {
         super(str);
     }
 

@@ -16,7 +16,8 @@ public class EjecucionParalela {
         Thread hilo2 = new Thread(new CaracteresRunnable());
         
         hilo1.start(); // retardo sleep 100 ms.
-        hilo2.start(); // retardo sleep 200 ms.        
+        hilo2.start(); // retardo sleep 200 ms.  
+       
     }    
 
 }

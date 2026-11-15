@@ -24,7 +24,7 @@ public class PruebaEncolamientoJoin {
         
         try {
             h1.join(); // máximo tiempo de espera a que termine ... infinito.
-            //h1.join(1000); // máxima espera ... 1 segundo = 1000 ms.
+//            h1.join(1000); // máxima espera ... 1 segundo = 1000 ms.
         } catch(InterruptedException ie) {
             System.out.println(ie);
         }
