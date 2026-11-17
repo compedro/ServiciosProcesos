@@ -9,7 +9,7 @@ public class HiloLectura extends Thread {
 
     private Cuaderno cuaderno;
     
-    public HiloLectura(Cuaderno cuaderno) { 
+    public HiloLectura(Cuaderno cuaderno) {
         this.cuaderno = cuaderno;
     }    
     
@@ -17,5 +17,4 @@ public class HiloLectura extends Thread {
     public void run() {
         cuaderno.leer();
     }
-
 }

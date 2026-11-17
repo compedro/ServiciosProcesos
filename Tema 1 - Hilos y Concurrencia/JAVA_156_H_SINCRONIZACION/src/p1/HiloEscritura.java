@@ -11,7 +11,7 @@ public class HiloEscritura extends Thread {
 
     private Cuaderno cuaderno;
     
-    public HiloEscritura(Cuaderno cuaderno) { 
+    public HiloEscritura(Cuaderno cuaderno) {
         this.cuaderno = cuaderno;
     }    
     

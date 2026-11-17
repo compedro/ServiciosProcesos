@@ -17,7 +17,7 @@ public class Fotocopiadora {
     // probar a quitar synchronized de la declaración del método para ver
     // cómo varios hilos harían uso de la máquina a la vez.
     
-    //public void fotocopiar(int cuantas) {                 // NO SINCRONIZADO.
+//    public void fotocopiar(int cuantas) {                 // NO SINCRONIZADO.
     public synchronized void fotocopiar(int cuantas) {      // SÍ SINCRONIZADO.
         
         String nombre = Thread.currentThread().getName();
